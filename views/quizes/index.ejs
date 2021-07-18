@@ -1,0 +1,38 @@
+<%- include("../partials/header")%>
+
+
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h1>Welcome to QuizWhiz!</h1>
+			<p>Take our selected Trivia Database quizes from your choice of category</p>
+			<p>
+				<a class="btn btn-primary btn-lg" href="/quizes/new">Add New Quiz</a>
+			</p>
+		<div>
+			
+	</header>
+	<h3>Our Available Quizes!</h3>
+	
+
+
+	<div id="quizess" class="row text-center" style="display: flex; flex-wrap: wrap;">
+
+		<%quizes.forEach(function(quiz){%>
+		<div class="col-md-3 col-sm-6">
+			<div class="thumbnail">
+				<img src="<%=quiz.image%>">
+				<div class="caption">
+					<h4><%=quiz.name%></h4>
+				</div>
+				<p>
+					<a href="/quizes/<%=quiz._id%>" class="btn btn-primary">More info</a>
+				</p>
+			</div>
+		</div>
+	<%})%>
+	</div>
+	
+</div>
+
+<%- include("../partials/footer")%>
