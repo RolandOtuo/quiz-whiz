@@ -9,7 +9,6 @@ let questions = [];
 
 fetch(
   `https://opentdb.com/api.php?amount=${quesNum}&category=${categoryType}&difficulty=${difficultyType}&type=multiple`
-  
 )
   .then((res) => {
       return res.json();

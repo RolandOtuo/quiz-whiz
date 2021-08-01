@@ -3,9 +3,9 @@
 <div class="container" id="quiz-info">
 	<div class="row">
 		<div class="col-md-3">
-			<p class="lead"><%=quiz.name%><i style="color:gold;" class="fas fa-brain"></i></p>
+			<p class="lead" style="color:rgb(54, 5, 117);"><i class="fas fa-hat-wizard"></i><%=quiz.name%></p>
 			<% if(currentUser){ %>
-				<p class="lead"><%=currentUser.username%> recent Scores:</p>
+				<p class="lead"><%=currentUser.username%>'s recent Scores:</p>
 				<div id="score-board" class="list-group">
 					<!-- <li list-group-item active></li>
 					<li list-group-item>Info 2</li>
@@ -149,10 +149,11 @@
         </div>
     </div>
 	<!-- Inside this JavaScript file I've inserted Questions and Options only -->
-	<script src="/quizscript/mainquiz.js"></script>
+	<script src="/quizscript/questions.js"></script>
 
 	<!-- Inside this JavaScript file I've coded all Quiz page Codes -->
-	<script src="/quizscript/Questions.js"></script>
+	<script src="/quizscript/mainquiz.js"></script>
+	
 </div>
 
 <%- include("../partials/footer")%>
