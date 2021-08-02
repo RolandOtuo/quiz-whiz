@@ -18,6 +18,7 @@ var commentRoutes 		= require("./routes/comments"),
 	quizRoutes 	= require("./routes/quizes"),
 	indexRoutes 		= require("./routes/index")
 
+
 // mongoose.connect("mongodb://localhost:27017/quiz_whiz", {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true
@@ -54,8 +55,10 @@ app.use(session({
     cookie: { maxAge: 180 * 60 * 1000 } // 180 minutes session expiration
 }));
 
-//PASSPORT CONFIG
+//moment for time
+app.locals.moment = require('moment');
 
+//PASSPORT CONFIG
 app.use(passport.initialize());
 app.use(passport.session());
 passport.use(new LocalStrategy(User.authenticate()));
