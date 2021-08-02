@@ -1,3 +1,4 @@
+![Screenshot (853)](https://user-images.githubusercontent.com/60943625/127934877-485bcb60-e25c-42f5-b3df-2dfa0693a1d2.png)
 # quiz-whiz
 a responsive full-stack Quiz website with social media integration that allows users to 
 create personalized quizlets and share scores their scores on Twitter
