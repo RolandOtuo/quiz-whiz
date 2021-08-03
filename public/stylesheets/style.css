@@ -415,3 +415,8 @@ footer button.show{
     color: #fff;
     background: #007bff;
 }
+
+.list-group-item:first-child {
+    border: 3px solid greenyellow;
+    color: blue;
+}
